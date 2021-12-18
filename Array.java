@@ -1,6 +1,5 @@
 public class Array {
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         int arr[] = new int[5]; // . new keyword is used when we want to initialize the array
 
         for (int i = 0; i < arr.length; i++) // arr.length --> obj for finding array length
@@ -10,10 +9,6 @@ public class Array {
         }
 
         // . For 2D array
-
-        
-
-
 
     }
 }
