@@ -1,24 +1,24 @@
 public class Polymorphism_Constructor {
     public static void main(String[] args) {
 
-        // Person p1 = new Person();
+        Person p1 = new Person();
 
-        // p1.name = "Faraz";
-        // p1.age = 22;
+        p1.name = "Faraz";
+        p1.age = 22;
 
-        // p1.walk();
+        p1.walk();
 
-        // Person p2 = new Person();
+        Person p2 = new Person();
 
-        // p2.name = "Adam";
-        // p2.age = 21;
+        p2.name = "Adam";
+        p2.age = 21;
 
-        // p1.eat();
-        // p1.walk(9999);
+        p1.eat();
+        p1.walk(9999);
 
-        // System.out.println(Person.count); // . Calling Static variable
+        System.out.println(Person.count); // . Calling Static variable
 
-        Person a = new Person("Faraz", 22);
+        Person a = new Person("Faraz", 22); // . Constructor overloading
         a.walk(55);
 
     }
@@ -35,10 +35,17 @@ class Person {
         count++;
     }
 
-    Person(String new_name, int new_age) // . Constructor Overloading
+    // Person(String new_name, int new_age) // . Constructor Overloading
+    // {
+    // name = new_name;
+    // age = new_age;
+    // }
+
+    Person(String name, int age) // . Constructor Overloading
     {
-        name = new_name;
-        age = new_age;
+        this(); // . Always called in beguinning calling default constructor
+        this.name = name;
+        this.age = age;
     }
 
     void walk() {
