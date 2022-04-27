@@ -1,16 +1,16 @@
 public class pract {
+    private static int i=0,j=0;
+
     public static void main(String[] args) {
-        // for(int i=0;i<5;i++)
-        // {
-        //     System.out.println((i+1)*100);
-        // }
-        // int n=10;
-        // while(n!=0)
-        // {
-        //     n--;
-        //     if(n==5) continue;
-        //     System.out.println(n);
-        // }
+        int i=3 , k=4;
+        {
+            int j=2;
+            System.out.println(" i + j is " + i+j);
+        }
+
+        k=i+j;
+        System.out.println(k);
+        System.out.println(j);
     }
     
 }
